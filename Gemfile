@@ -47,4 +47,6 @@ group :development, :test do
 
 gem 'audited'
 
+gem 'bundler-audit'
+
 end
