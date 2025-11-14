@@ -21,7 +21,7 @@ jobs:
         run: |
           # Save the SSH private key and set the permissions
           echo "$SSH_PRIVATE_KEY" > keypair.pem
-          chmod 600 CAD.pem
+          chmod 600 keypair.pem
 
       - name: Deploy to EC2
         run: |
