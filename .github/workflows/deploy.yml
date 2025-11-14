@@ -46,7 +46,8 @@ jobs:
             bundle exec brakeman --no-pager
             bundle exec rubocop --auto-correct-all --disable-uncorrectable
             rails db:migrate
-            sudo ./startServer.sh
+            chmod +x ./startServer.sh
+            ./startServer.sh
           EOF
 
       - name: Clean up
